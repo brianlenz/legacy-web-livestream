@@ -71,6 +71,22 @@
         span.live-date {
             color: #f77a4d;
         }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -102,7 +118,7 @@
     </div>
     <div id="livestream">
         <div id="livestreamIntro" class="livestream-welcome">Join us now streaming live!</div>
-        <div id="livestreamPlayer"></div>
+        <div id="livestreamPlayer" class="video-container"></div>
     </div>
     <!-- bl: END livestream countdown / body section -->
 </div>
